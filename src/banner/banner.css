@@ -1,35 +1,118 @@
+body {
+   /* overflow-x: hidden;*/
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+  
+
+}
 .banner-container {
-    background-image: url("../img/capa.png");
+
+    background:
+			url('../img/capa.png'),linear-gradient(47deg, #000113 0%, #04061D 80%, #04061D 100%), no-repeat;
     background-size: cover;
-    height: 45vw;
+    height: 80vh;
+   
     
 }
 
 .text-container {
+    font-family: 'Anybody', cursive !important;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-content: center;
     position: relative;
-    left: 8%;
-    top: 40%;
+    left: 20%;
+    top: 50%;
+    transform:translate(0,-50%);
+   
+    max-width: 1024px;
     
 }
 
 .text-container p {
-    font-size: 3em;
+    font-size: 36px;
     line-height: 2em;
     height: auto;
-    border: 1px solid red;
+    color: rgb(196, 196, 196) !important;
     margin: 0;
 }
 
 .text-container h1 {
-    font-size: 5em;
-    border: 1px solid red;
+    font-size: 60px;
+    letter-spacing: 5px;
     text-transform: uppercase;
     margin: 0;
-   
     text-align: left;
+    line-height: 70px;
+}
+
+@media (max-width: 768px){
+
+
+    .text-container p {
+        font-size: 20px;
+        line-height: 1em;
+        height: auto;
+        color: rgb(196, 196, 196) !important;
+        margin: 0;
+    }
+    
+    .text-container h1 {
+        font-size: 40px;
+        max-width: 350px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin: 0;
+        text-align: left;
+        line-height: 50px;
+    }
+
+    .banner-container {
+
+        background:
+                url('../img/capa.png'),linear-gradient(47deg, #000113 0%, #04061D 80%, #04061D 100%), no-repeat;
+        background-size: 100vh;
+        height: 50vh;
+       
+       
+        
+    }
+
+}
+
+@media (max-width: 550px ){
+
+    .banner-container {
+
+        background:
+                url('../img/capa.png'),linear-gradient(47deg, #000113 0%, #04061D 80%, #04061D 100%), no-repeat;
+        background-size: cover;
+        height: 55vh;
+        background-position: 89% center;
+       
+       
+        
+    }
+
+    .text-container {
+        display: flex;
+        position: relative;
+        left: 0;
+        padding-top: 25%;
+        padding-left: 15%;
+        height: inherit;
+      
+      
+        background: rgba(0, 0, 0, 0.6);
+        width: 100vw;
+        
+    }
+
 }

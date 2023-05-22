@@ -1,10 +1,13 @@
 .navbar {
+   
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     display: flex;
-    height: 50px;
+    height: 60px;
     justify-content: space-between;
     background-color: #fff;
-    margin-top: 15px;
+    
+  
 
 }
 
@@ -13,8 +16,9 @@
 }
 
 .navbar img {
-    padding: 5px;
-
+    padding: 10px;
+    width: 150px;
+    object-fit: contain;
     position: relative !important;
     left: 20vw;
 }
@@ -28,22 +32,97 @@
 .navbar-links li {
     width: 100px !important;
     height: 25px;
-    font-weight: bold;
+   
 
     text-transform: uppercase;
 }
 
 .navbar-links li a {
-    color: #3f3f3f !important;
+    color: #757575 !important;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .navbar-links li a:hover {
-    color: #757575 !important;
+    color: #cccccc !important;
     text-decoration: none;
 }
 
 .navbar ul {
     position: relative !important;
     right: 20vw;
+}
+
+@media (max-width: 550px) {
+
+
+    .navbar {
+   
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 120px;  
+        background-color: #fff;
+       
+        
+      
+    
+    }
+
+   
+
+    .navbar .navbar-links {
+
+       
+        width: 100vw;
+        margin-top: 10px;
+        padding-top: 10px;
+        display: flex;
+        height: 50px;
+        left: 0 !important;
+        border-top: 1px solid #aaadaf;
+        justify-content: center;
+
+        
+    }
+
+    .navbar-links li {
+       
+        height: 25px;
+        margin:0 !important;      
+        padding: 0px !important;    
+        text-transform: uppercase;
+       
+        justify-content: center;
+        width: 20vw !important;
+    }
+
+    .navbar ul {
+       
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        right: 0 !important;
+        left: 0 !important;
+
+        
+       
+    }
+
+    .navbar img {
+       
+        width: 100vw;
+        height: 60px;
+        object-fit: contain;
+        position: relative !important;
+        left: 0 !important;
+        margin-top: 5px;
+        
+
+    }
+
 }

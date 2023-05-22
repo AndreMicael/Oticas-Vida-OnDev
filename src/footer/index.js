@@ -5,7 +5,7 @@ function Footer() {
     return ( 
 
         <footer>
-         <h1>Footer</h1>
+         <p>© 2022 Óticas Vida. - Todos os direitos reservados.</p>
 
         </footer>
 

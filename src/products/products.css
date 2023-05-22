@@ -1,3 +1,194 @@
 .product-container {
-    border: 1px solid lime;
+   width: 100vw;
+   padding: 100px 200px 100px 200px;
+   height: 145vh;
+  
+}
+
+.product-container h1 {
+    text-transform: uppercase;
+    font-weight:normal;
+    font-size: 30px;
+   
+ }
+
+
+.limitar-secao {
+    max-width: 1024px;
+}
+
+.content-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px 0 50px 0;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    
+ 
+    
+}
+
+.content-container .cards {
+ 
+    width: 45% ;
+    padding: 20px 10px 20px 10px !important;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-container .cards:hover {
+ 
+    transform: scale(105%);
+  
+
+    
+}
+
+.smooth-transition {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+.cards img {
+    width: 80%;
+    min-height: 150px;
+    margin: 30px 0 30px 0;
+    object-fit: contain;
+    
+}
+
+.cards h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.cards p {
+
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.product-guarantee{
+    
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.product-guarantee li {
+    text-align: left;
+    margin: 5px;
+}
+
+.product-text {
+    margin: 0 auto;
+    line-height: 45px;
+}
+
+.product-guarantee ul {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+@media (max-width: 768px){ 
+
+
+    .product-container {
+        width: 100vw;
+        padding: 60px 20px 60px 20px;
+        height: 145vh;
+       
+     }
+
+     .cards img {
+        width: 80%;
+        max-height: 100px;
+        margin: 30px 0 30px 0;
+        
+    }
+    
+    .cards h1 {
+        font-size: 22px;
+        margin: 0;
+    }
+    
+    .cards p {
+    
+        margin: 0;
+        font-weight: bold;
+        font-size: 16px;
+    
+    }
+
+
+}
+
+@media (max-width: 550px) {
+
+    .product-container {
+        width: 100vw;
+        padding: 10px 0px 10px 0px;
+        height: 235vh;
+       
+     }
+
+     .product-text {
+        margin: 0 auto;
+        line-height: 45px;
+        padding: 10px;
+    }
+
+    .content-container .cards {
+ 
+        width: 100% ;
+        padding: 20px 10px 20px 10px !important;
+        margin-bottom: 20px;
+        margin-left: 0 !important;
+        background-color: #f6f6f6;
+        display: flex;
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+
+    .product-guarantee{
+    
+        padding: 0 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    
+    .product-guarantee li {
+        text-align: left;
+        margin: 5px;
+    }
+    
+  
+    
+    .product-guarantee ul {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+    }
+     
+
 }
